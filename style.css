@@ -1,4 +1,7 @@
 body{
     margin: 1rem;
     padding: 0;
+    text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
 }
