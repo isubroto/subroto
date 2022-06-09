@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'S English';
+  src: url('VeganStylePersonalUse-5Y58.eot');
+  src: url('VeganStylePersonalUse-5Y58.eot?#iefix') format('embedded-opentype'),
+       url('VeganStylePersonalUse-5Y58.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'English';
+  src: url('VeganStylePersonalUse.svg#VeganStylePersonalUse') format('svg'),
+       url('VeganStylePersonalUse.ttf') format('truetype'),
+       url('VeganStylePersonalUse.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bangla Reg';
+  src: url('SutonnyMJ Regular.eot');
+  src: url('SutonnyMJ Regular.eot?#iefix') format('embedded-opentype'),
+       url('SutonnyMJ Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bangla';
+  src: url('SutonnyMJ.svg#SutonnyMJ') format('svg'),
+       url('SutonnyMJ.ttf') format('truetype'),
+       url('SutonnyMJ.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BenSenHandwriting';
+  src: url('BenSenHandwriting.eot');
+  src: url('BenSenHandwriting.eot?#iefix') format('embedded-opentype'),
+       url('BenSenHandwriting.svg#BenSenHandwriting') format('svg'),
+       url('BenSenHandwriting.ttf') format('truetype'),
+       url('BenSenHandwriting.woff') format('woff'),
+       url('BenSenHandwriting.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Abduction2002';
+  src: url('Abduction2002.eot');
+  src: url('Abduction2002.eot?#iefix') format('embedded-opentype'),
+       url('Abduction2002.svg#Abduction2002') format('svg'),
+       url('Abduction2002.ttf') format('truetype'),
+       url('Abduction2002.woff') format('woff'),
+       url('Abduction2002.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

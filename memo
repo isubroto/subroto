@@ -1,0 +1,66 @@
+
+h3 class='mt-5 d-flex justify-content-center'>কোন বিবরণ পাওয়া যায় নি।</h3>
+                                        <div class="row d-flex justify-content-around" >
+                                            <div class="col-11">
+                                                <div class="row bg-danger text-white p-2 pt-3">
+                                                    <div class="col-2 d-flex justify-content-center">
+                                                        <h6><strong>পরিমাণ</strong></h6>
+                                                    </div>
+                                                    <div class="col-4 d-flex justify-content-center">
+                                                        <h6><strong>বিবরণ</strong></h6>
+                                                    </div>
+                                                    <div class="col-2 d-flex justify-content-center">
+                                                        <h6><strong>দর</strong></h6>
+                                                    </div>
+                                                    <div class="col-3 d-flex justify-content-center">
+                                                        <h6><strong>টাকা</strong></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="row p-2 pt-3">
+                                                    <div class="col-2 d-flex justify-content-center mt-1">
+                                                        <h6><strong>৪৮০ পিছ</strong></h6>
+                                                    </div>
+                                                    <div class="col-4 d-flex justify-content-center mt-1">
+                                                        <h6><strong>৬x১২০A চেরী</strong></h6>
+                                                    </div>
+                                                    <div class="col-2 d-flex justify-content-center mt-1">
+                                                        <h6><strong>১৭৪০</strong></h6>
+                                                    </div>
+                                                    <div class="col-3 d-flex justify-content-center mt-1">
+                                                        <h6><strong>৬৯৬০০</strong></h6>
+                                                    </div>
+                                                    <div class="col-1 d-flex justify-content-center">
+                                                        <button type="button" onclick="Delete('id')" class="btn btn-sm btn-outline-danger"><i class="far fa-trash-alt"></i></button>
+                                                    </div>
+                                          
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="row p-2 pt-3 d-flex justify-content-end">
+                                                    <div class="col-3 d-flex justify-content-center mt-1">
+                                                        <h6><strong>লেবার</strong></h6>
+                                                    </div>
+                                                    <div class="col-3 d-flex justify-content-center">
+                                                        <input type="text" name="lb" id="lb" class=" form-control">
+                                                    </div>
+                                                    <div class="col-1 d-flex justify-content-center">
+                                                        <button type="button" onclick="Delete('id')" class="btn btn-sm btn-outline-success"><i class="far fa-check-circle"></i> </button>
+                                                    </div>
+            
+                                                </div>
+                                            </div>
+                                        </div>
+                                <div class="card-footer alert-danger d-flex justify-content-end">
+                                    <div class="col-12 text-danger">
+                                        <div class="row p-2 d-flex justify-content-end">
+                                            <div class="col-4 d-flex justify-content-center mt-1">
+                                                <h6><strong>মোট = </strong></h6>
+                                            </div>
+                                            <div class="col-3 d-flex justify-content-center">
+                                                <h6><strong>৯০৮০০০</strong></h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>

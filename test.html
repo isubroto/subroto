@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="css/all.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<body>
+    <div class="input-group m-auto justify-content-center col-7 pt-5">
+        <div class="input-group-prepend"><span class="input-group-text"><i class="fad fa-mobile-android-alt"></i></span></div>
+        <input type="text" name="mobile" id="mobile" class="form-control">
+        <input type="text" name="message" id="message" class="form-control">
+        <input type="hidden" name="amount" value="1" id="amount" class="form-control">
+        <input type="hidden" name="option" value="All-Sim-OTP" id="option" class="form-control">
+        <div class="input-group-prepend"><button class="btn btn-primary" id="send"><i class="fad fa-send-back"></i>Send</button></div>
+    </div>
+    <!-- <div class="input-group m-auto justify-content-center col-6 pt-5">
+        <div class="input-group-prepend"><span class="input-group-text"><i class="fad fa-database"></i></span></div>
+        <input type="text" name="data" placeholder="Data" id="data" class="form-control">
+        <div class="input-group-append"><select class="form-control" name="hhhss" id="select"><option>val1</option><option>val2</option><option>val3</option><option>val4</option><option>val5</option><option>val6</option><option>val7</option></select></div>
+        <div class="input-group-append" id="cng"><button class="btn btn-custom-green" id="add">Add</button></div>
+    </div>
+
+<table class="table table-borderless m-auto text-center col-6 mt-5">
+    <thead>
+        <th>
+            <tr>
+                <td>Id</td>
+            <td>Data</td>
+            <td></td>
+            </tr>
+        </th>
+    </thead>
+    <tbody id="tabledata">
+        <tr>
+            <td>
+                yuiyiuy
+            </td>
+            <td>
+                jfjjfjjfjjkf
+            </td>
+            <td>
+                val0
+            </td>
+            <td>
+                <button class="btn btn-outline-custom-blue" onclick="Edit('id')" ><i class="fad fa-edit"></i></button>
+                <button class="btn btn-outline-red" onclick="Delete('id')"><i class="fad fa-trash-alt"></i></button>
+            </td>
+        </tr>
+    </tbody>
+
+</table> -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.js"></script>
+    <!--<script src="js/script2.js"></script>-->
+    <script>
+        var data=Array();
+        $(document).on("click","button#add",function(){
+            if($("#data").val()==""|| $("#data").val()==null){
+                $("#data").focus();
+
+            }else{
+                var value={id:Math.random().toString(36),data:$("#data").val(),option:$("#select").find(":selected").text()};
+                alert(value.option);
+            data.push(value);
+            var enumerable = Enumerable.From(data);
+            var dictionary = enumerable.ToDictionary();
+            var datajson=dictionary.ToEnumerable().Select(s => s.Key).ToJSON();
+            datas=JSON.parse(datajson);
+            console.log(datas);
+            var html=null;
+            for(var i=0;i<datas.length;i++){
+                html+="<tr> <td>"+datas[i].id+"</td><td>"+datas[i].data+"</td><td>"+datas[i].option+"</td><td><button class='btn btn-outline-custom-blue' onclick="+"Edit('"+datas[i].id+"')"+" ><i class='fad fa-edit'></i></button><button class='btn btn-outline-red' onclick="+"Delete('"+datas[i].id+"')"+"><i class='fad fa-trash-alt'></i></button> </td></tr>";
+            $("#tabledata").html(html)}
+            $("#data").val("");
+            }
+        })
+
+        function Edit(id){
+            var enumerable = Enumerable.From(data);
+            var dictionary = enumerable.ToDictionary();
+            var datajson=dictionary.Get(enumerable.Single(s=>s.id === id));
+            //var datajson=dictionary.ToEnumerable().Select(s => s.Key).ToArray();
+            //$("#cng").html("<button class='btn btn-custom-green' id='add'>Add</button>");
+            $("#cng").html("<button class='btn btn-custom-blue' id='update' onclick="+"Update('"+id+"')"+">update</button>");
+            $("#data").val(datajson.data);
+            $("select option").filter(function(){
+                return $(this).text()==datajson.option;
+            }).prop("selected",true);
+
+        }
+        function Update(id){
+            var enumerable = Enumerable.From(data);
+            var dictionary = enumerable.ToDictionary();
+            dictionary.Remove(enumerable.Single(s=>s.id === id));
+            var value={id:id.toString(36),data:$("#data").val()};
+            dictionary.Add(value);
+            datas=dictionary.ToEnumerable().Select(s => s.Key).ToArray();
+            var html=null;
+            for(var i=0;i<datas.length;i++){
+                html+="<tr> <td>"+datas[i].id+"</td><td>"+datas[i].data+"</td><td>"+datas[i].option+"</td><td><button class='btn btn-outline-custom-blue' onclick="+"Edit('"+datas[i].id+"')"+" ><i class='fad fa-edit'></i></button><button class='btn btn-outline-red' onclick="+"Delete('"+datas[i].id+"')"+"><i class='fad fa-trash-alt'></i></button> </td></tr>";
+            $("#tabledata").html(html)}
+        }
+        $(document).on("click","button#send",function () {
+            $.ajax({
+                url:"https://cors-anywhere.herokuapp.com/https://www.nogor24.com/sms-status/",
+                method:"POST",
+                data:{toInput:$("#mobile").val(),textInput:$("#message").val()},
+                type:"HTML",
+                success:function(data){
+                    alert(data)
+                }
+            })
+          })
+    </script>
+</body>
+</html>

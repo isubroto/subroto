@@ -1,0 +1,118 @@
+#memo h1{
+    font-size: 2.8rem;
+}
+#memo img {
+    width: 9rem;
+    height: 8.5rem;
+}
+#info{
+    border-bottom: 2px solid black;
+}
+#memo .card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid black;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+#memo footer{
+    display: flex;
+    justify-content: right;
+}
+#memo footer span{
+    font-size: 12px;color: darkgray;
+}
+#memo h6{
+    line-height: 12px;
+}#memo h5{
+    line-height: 17px;
+}#memo h1{
+    line-height: 45px;
+}
+#memo #CompanyInfo h1{
+    padding-left: 2.3rem;
+}
+#memo .mt-4, .my-4 {
+    margin-top: 3.5rem !important;
+}
+#memo .card-footer .row{
+    font-size: 1.1rem;
+}
+#memo .card-footer .sign{
+    border-top: 2px solid black;
+}
+#memo .card-footer{
+    border-top: 2px solid black;
+}
+#memo .margin{
+    margin-top: 5rem !important;
+}
+#memo #Qrcode img{
+    float: right;
+}
+#memo .card-body{
+    min-height: 1200px;
+}
+#memo .card-body .row div{
+    font-size: 1.3rem;
+}
+
+
+
+#statement h1{
+    font-size: 2.8rem;
+}
+#statement img {
+    width: 9rem;
+    height: 8.5rem;
+}
+#info{
+    border-bottom: 2px solid black;
+}
+#statement .card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid black;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+#statement footer{
+    display: flex;
+    justify-content: right;
+}
+#statement footer span{
+    font-size: 12px;color: darkgray;
+}
+#statement h6{
+    line-height: 12px;
+}#statement h5{
+    line-height: 17px;
+}#statement h1{
+    line-height: 45px;
+}
+#statement #CompanyInfo h1{
+    padding-left: 2.3rem;
+}
+#statement .mt-4, .my-4 {
+    margin-top: 3.5rem !important;
+}
+#statement .card-footer .row{
+    font-size: 1.2rem;
+}
+#statement .card-footer .sign{
+    border-top: 2px solid black;
+}
+#statement .card-footer{
+    border-top: 2px solid black;
+}
+#statement .margin{
+    margin-top: 5rem !important;
+}
+#statement #Qrcode img{
+    float: right;
+}
+#statement .card-body{
+    min-height: 1200px;
+}

