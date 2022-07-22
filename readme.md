@@ -1,7 +1,7 @@
 # Restaurant Management System
 
 User Manual [Click this link to use this system](https://isubroto.github.io/subroto/).
-![alt text](https://github.com/isubroto/subroto/blob/main/img/MicrosoftTeams-image.png?raw=true"Logo Title Text 1")
+![alt text](https://raw.githubusercontent.com/isubroto/subroto/main/img/MicrosoftTeams-image.png"Logo Title Text 1")
 
 ## System Login
 
