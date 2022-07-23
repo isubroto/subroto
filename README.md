@@ -117,7 +117,7 @@ Here in this interface, there is an employee table where all the details of empl
 There are three buttons first Add employee button, this button is use for adding employee and for adding admin need to fill in the spaces with the employee details and need to upload employee image by clicking on the
 
 Upload photo button, after secondly the Update Employee button is use for any change for employee details and thirdly the Delete Employee button by which admin can delete a specific employee.
-![Employee Button](<https://github.com/isubroto/subroto/blob/main/img/MicrosoftTeams-image%20(5).png?raw=true> 'Employee Button')
+![Employee Button](<https://github.com/isubroto/subroto/blob/main/img/MicrosoftTeams-image%20(2).png?raw=true> 'Employee Button')
 
 ## Stock Button
 
@@ -126,7 +126,7 @@ In this image there is a table which show the Stock details.
 The Search option help to find the specific stock item by name. In Stock item panel the two textbox are for inserting the name of a stock item and weight of that item.
 
 Here Add button adds a new stock in the table, Update button use for updating a specific stock item and lastly the delete button is use for deleting a stock item.
-![Stock Button](<https://github.com/isubroto/subroto/blob/main/img/MicrosoftTeams-image%20(2).png?raw=true> 'Stock Button')
+![Stock Button](<https://github.com/isubroto/subroto/blob/main/img/MicrosoftTeams-image%20(4).png?raw=true> 'Stock Button')
 
 ## Food Menu Button:
 
@@ -135,7 +135,7 @@ In this image admin can see the all-food item table and can search a specific fo
 admin can add new food by clicking on the add new item and with filling up the details for the item.
 
 Admin can Enable or disable food item by clicking on the Enable and Disable button, for updating any food item admin can click on the update button.
-![Food Menu Button](<https://github.com/isubroto/subroto/blob/main/img/MicrosoftTeams-image%20(4).png?raw=true> 'Food Menu Button')
+![Food Menu Button](<https://github.com/isubroto/subroto/blob/main/img/MicrosoftTeams-image%20(5).png?raw=true> 'Food Menu Button')
 
 ## Chef:
 
